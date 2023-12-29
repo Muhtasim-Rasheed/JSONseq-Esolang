@@ -1,0 +1,10 @@
+{
+  "sequence": [
+    { "wd-name": "SETVAR", "arg1": "PRNT-OUT-DT", "arg2": "This will print.\n" },
+    { "wd-name": "LOOP", "arg1": 0, "arg2": 3, "arg3": 1, "arg4": [
+      { "wd-name": "PRNT" },
+      { "wd-name": "SETVAR", "arg1": "PRNT-OUT-DT", "arg2": "This will print again.\n" }
+    ]},
+    { "wd-name": "EXIT", "arg1": 0 }
+  ]
+}

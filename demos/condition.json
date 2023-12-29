@@ -1,0 +1,11 @@
+{
+  "sequence": [
+    { "wd-name": "SETVAR", "arg1": "x", "arg2": 4 },
+    { "wd-name": "SETVAR", "arg1": "y", "arg2": 6 },
+    { "wd-name": "ASSERT", "arg1": "x", "arg2": "y", "arg3": "ls-eq", "arg4": [
+      { "wd-name": "SETVAR", "arg1": "PRNT-OUT-DT", "arg2": "x <= y (4 <= 6)\n" },
+      { "wd-name":   "PRNT" }
+    ]},
+    { "wd-name": "EXIT", "arg1": "0" }
+  ]
+}

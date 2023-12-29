@@ -1,0 +1,12 @@
+{
+  "sequence": [
+    { "wd-name": "SETVAR", "arg1": "PRNT-OUT-DT", "arg2": "This will print first.\n" },
+    { "wd-name": "PRNT" },
+    { "wd-name": "JUMP", "arg1": 5 },
+    { "wd-name": "SETVAR", "arg1": "PRNT-OUT-DT", "arg2": "This will not print because of the JUMP.\n" },
+    { "wd-name": "PRNT" },
+    { "wd-name": "SETVAR", "arg1": "PRNT-OUT-DT", "arg2": "This will print second because of the JUMP.\n" },
+    { "wd-name": "PRNT" },
+    { "wd-name": "EXIT", "arg1": 0 }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "sequence": [
+    { "wd-name": "SETVAR", "arg1": "V1", "arg2": 2 },
+    { "wd-name": "SETVAR", "arg1": "V2", "arg2": 2 },
+    { "wd-name":    "ADD", "arg1": "V1", "arg2": "V2", "arg3": "PRNT-OUT-DT" },
+    { "wd-name":   "PRNT" },
+    { "wd-name":    "SUB", "arg1": "V1", "arg2": "V2", "arg3": "PRNT-OUT-DT" },
+    { "wd-name":   "PRNT" },
+    { "wd-name":    "MUL", "arg1": "V1", "arg2": "V2", "arg3": "PRNT-OUT-DT" },
+    { "wd-name":   "PRNT" },
+    { "wd-name":    "DIV", "arg1": "V1", "arg2": "V2", "arg3": "PRNT-OUT-DT" },
+    { "wd-name":   "PRNT" },
+    { "wd-name":   "EXIT", "arg1": 0 }
+  ]
+}

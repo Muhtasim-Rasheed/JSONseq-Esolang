@@ -1,0 +1,7 @@
+{
+  "sequence": [
+    { "wd-name": "SETVAR", "arg1": "PRNT-OUT-DT", "arg2": "Hello, World!\n" },
+    { "wd-name":   "PRNT" },
+    { "wd-name":   "EXIT", "arg1": 0 }
+  ]
+}

@@ -10,11 +10,15 @@ let vars = {
   "PRNT-OUT-DT": "..."
 }
 
-for (let i = 0; i < program.sequence.length; i++) {
-  i = executeWd(program.sequence, i)
+async function run() {
+  for (let i = 0; i < program.sequence.length; i++) {
+    i = await executeWd(program.sequence, i)
+  }
 }
 
-function executeWd(sequence, currentWord) {
+run()
+
+async function executeWd(sequence, currentWord) {
   let wd = sequence[currentWord]
 
   switch (wd["wd-name"]) {
@@ -41,16 +45,16 @@ function executeWd(sequence, currentWord) {
     }
 
     // INP --- input
-    // case "INP": {
-    //   await new Promise((resolve, reject) => {
-    //     rl.question('> ', (answer) => {
-    //       vars[wd["arg1"]] = answer;
-    //       resolve();
-    //       rl.close();
-    //     });
-    //   });
-    //   break;
-    // }
+    case "INP": {
+      await new Promise((resolve, reject) => {
+        rl.question('> ', (answer) => {
+          vars[wd["arg1"]] = answer
+          resolve()
+          rl.close()
+        })
+      })
+      break
+    }
 
     // ADD --- add
     case "ADD": {

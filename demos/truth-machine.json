@@ -1,13 +1,17 @@
 {
   "sequence": [
-    { "wd-name": "SETVAR", "arg1": "INPUT", "arg2": "0" },
+    { "wd-name": "INP", "arg1": "INPUT" },
     { "wd-name": "SETVAR", "arg1": "ZERO", "arg2": "0" },
     { "wd-name": "SETVAR", "arg1": "ONE", "arg2": "1" },
     { "wd-name": "ASSERT", "arg1": "INPUT", "arg2": "ZERO", "arg3": "eq", "arg4": [
       { "wd-name": "PRNT", "arg1": "ZERO" },
       { "wd-name": "EXIT", "arg1": 0 }
     ]},
-    { "wd-name": "PRNT", "arg1": "ONE" },
-    { "wd-name": "JUMP", "arg1": 4 }
+    { "wd-name": "ASSERT", "arg1": "INPUT", "arg2": "ONE", "arg3": "eq", "arg4": [
+      { "wd-name": "LOOP", "arg1": 0, "arg2": 9999999, "arg3": 1, "arg4": [
+        { "wd-name": "PRNT", "arg1": "ONE" }
+      ]}
+    ]},
+    { "wd-name": "EXIT", "arg1": 0 }
   ]
 }
